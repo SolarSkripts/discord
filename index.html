@@ -51,9 +51,78 @@
         .discord-button:hover {
             background-color: #5280a3;
         }
+                    margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2f3136;
+        }
+
+        .embed-container {
+            width: 400px;
+            background-color: #7289da;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .embed-header {
+            background-color: #5865f2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .embed-header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .embed-header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .embed-body {
+            padding: 20px;
+        }
+
+        .embed-body p {
+            margin-top: 0;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .embed-body a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7289da;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .embed-body a:hover {
+            background-color: #5865f2;
+        }
     </style>
 </head>
 <body>
+     <div class="embed-container">
+        <div class="embed-header">
+            <img src="logo.png" alt="Logo">
+            <h2>Welcome to Our Awesome Website!</h2>
+        </div>
+        <div class="embed-body">
+            <p>This is some cool content in our embed. Feel free to explore!</p>
+            <a href="https://example.com">Visit Our Website</a>
+        </div>
+    </div>
     <div class="container">
         <h1>Welcome to Our Discord Server</h1>
         <p>Join our community on Discord and connect with others!</p>
