@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord Server Application Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        background: #7289da;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+        background: #5865f2;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Discord Staff Application Form</h2>
+    <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST">
+        <label for="username">Discord Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your Discord username for example JohnGames124" required>
+        
+        <label for="age">Position</label>
+        <input type="text" id="age" name="age" placeholder="what role you want for example Mod" required>
+
+        <label for="reason">Why should we accept you.</label>
+        <textarea id="reason" name="reason" placeholder="Why should we accept you" required></textarea>
+      
+        <label for="question">Will you obey the rules.</label>
+        <textarea id="text" name="text" placeholder="Yes or No" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
