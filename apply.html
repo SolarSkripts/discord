@@ -7,7 +7,8 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background-color: #121212;
+        color: #fff;
         margin: 0;
         padding: 20px;
     }
@@ -15,7 +16,7 @@
     .container {
         max-width: 600px;
         margin: 0 auto;
-        background: #fff;
+        background: #333;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,21 +32,20 @@
     }
 
     input[type="text"],
+    input[type="checkbox"],
     textarea {
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
-        border: 1px solid #ccc;
+        border: 1px solid #555;
         border-radius: 5px;
         box-sizing: border-box;
+        background-color: #444;
+        color: #fff;
     }
 
     textarea {
         height: 100px;
-    }
-
-    input[type="checkbox"] {
-        margin-bottom: 20px;
     }
 
     input[type="submit"] {
@@ -69,8 +69,8 @@
         <label for="username">Discord Username</label>
         <input type="text" id="username" name="username" placeholder="Enter your Discord username" required>
         
-        <label for="age">Age</label>
-        <input type="text" id="age" name="age" placeholder="Enter your age" required>
+        <label for="Punishment History">Have you ever been punished</label>
+        <input type="text" id="Punishment History" name="Punishment History" placeholder="Punishment history" required>
         
         <label for="rules">Will you obey the rules?</label>
         <input type="checkbox" id="rules" name="rules" value="yes" required>
