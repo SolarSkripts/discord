@@ -44,6 +44,10 @@
         height: 100px;
     }
 
+    input[type="checkbox"] {
+        margin-bottom: 20px;
+    }
+
     input[type="submit"] {
         background: #7289da;
         color: #fff;
@@ -60,19 +64,19 @@
 </head>
 <body>
 <div class="container">
-    <h2>Discord Staff Application Form</h2>
+    <h2>Discord Server Application Form</h2>
     <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST">
         <label for="username">Discord Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your Discord username for example JohnGames124" required>
+        <input type="text" id="username" name="username" placeholder="Enter your Discord username" required>
         
-        <label for="age">Position</label>
-        <input type="text" id="age" name="age" placeholder="what role you want for example Mod" required>
-
-        <label for="reason">Why should we accept you.</label>
-        <textarea id="reason" name="reason" placeholder="Why should we accept you" required></textarea>
-      
-        <label for="question">Will you obey the rules.</label>
-        <input id="text" name="text" placeholder="Yes or No" required>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age" required>
+        
+        <label for="rules">Will you obey the rules?</label>
+        <input type="checkbox" id="rules" name="rules" value="yes" required>
+        
+        <label for="acceptance">Why should we accept you?</label>
+        <textarea id="acceptance" name="acceptance" placeholder="Tell us why we should accept you into the server" required></textarea>
         
         <input type="submit" value="Submit">
     </form>
